@@ -1,0 +1,470 @@
+/*
+
+TemplateMo 591 villa agency
+
+https://templatemo.com/tm-591-villa-agency
+
+*/
+
+/* ---------------------------------------------
+Table of contents
+------------------------------------------------
+01. font & reset css
+02. reset
+03. global styles
+04. header
+05. banner
+06. features
+07. testimonials
+08. contact
+09. footer
+
+--------------------------------------------- */
+/* 
+---------------------------------------------
+font & reset css
+--------------------------------------------- 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');/* 
+/* 
+---------------------------------------------
+reset
+--------------------------------------------- 
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header, nav, section, article, aside, footer, hgroup {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none ;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 28px;
+  color: black;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+button {
+  outline-color: transparent;
+  border: none;
+  background-color: transparent;
+}
+
+/* 
+---------------------------------------------
+Global Styles
+--------------------------------------------- 
+*/
+:root {
+  --inter_font:"Inter", sans-serif;
+  --primery-font:"Red Hat Text", sans-serif;
+  --Playfair-font: "Playfair Display", serif;
+  --Font-Paragraph:#666;
+  --Font-Header:#093C5F;
+  --Color-2:#F86761;
+}
+
+html,
+body {
+  font-family: var(--primery-font);
+}
+
+
+.flex-1 {
+  flex: 1;
+}
+
+.text-sm-semibold {
+  color: #FFF;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 600;
+line-height: 1.25rem; /* 142.857% */
+}
+.small_icon {
+  width: 1.25rem;
+height: 1.25rem;
+}
+.sction_titel {
+  color: #21386D;
+font-family: Playfair Display;
+font-size: clamp( 2.5rem, 6vw, 3.92231rem);
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.discrption_section {
+  color: var(--Font-Paragraph);
+font-size: 1.375rem;
+font-style: normal;
+font-weight: 400;
+line-height: 180%; /* 2.475rem */
+}
+
+.site_logo {
+  color: var(--Font-Header);
+font-size: clamp(1rem ,4vw , 1.24338rem) ;
+font-style: normal;
+font-weight: 600;
+line-height: 2.21038rem; /* 177.778% */
+}
+
+.navlink a{
+  color: var(--Font-Header, #093C5F) !important;
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1.5rem; /* 150% */
+}
+.sing-link {
+  color: var(--Font-Header, #093C5F);
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1.5rem; /* 150% */
+}
+.primery__button {
+    border-radius: 2.125rem;
+  border: 1.133px solid var(--CTA, #F86761);
+  background: var(--CTA, linear-gradient(219deg, #F86761 22.58%, #FEA07D 78.46%));
+  padding: 1.13331rem 2.72081rem 1.11669rem 2.7625rem;
+  color: #FFF;
+  font-size: 1.275rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.98331rem; /* 155.556% */
+}
+.main-button {
+  padding: 0.625rem 1rem;
+  border-radius: 0.5rem;
+border: 1px solid var(--CTA, #F86761);
+background: var(--CTA, linear-gradient(219deg, #F86761 22.58%, #FEA07D 78.46%));
+box-shadow: 0px 0px 0px 4px #F4EBFF, 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+color: white;
+font-family: var(--inter_font);
+}
+header {
+  padding-block:1rem ;
+}
+@media (min-width:992px) {
+  header {
+    padding-block: 4.57rem;
+  }
+  
+}
+.header-input {
+  border-radius: 0.5rem;
+border: 1px solid var(--Font-Paragraph, #666);
+background: #FFF;
+box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+padding-block:  0.875rem;
+padding-inline: 2.5rem 6rem;
+color: var(--Font-Paragraph, #666);
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5rem; /* 150% */
+}
+.input-menu {
+  right: .5rem;
+    border-radius: 0.5rem;
+background: #F9F5FF;
+ padding: 0.5rem 1rem;
+ height:75%;
+ gap: .5rem;
+}
+.input-menu p {
+  color: var(--Color-3, #8C68C8);
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 600;
+line-height: 1.25rem; /* 142.857% */
+}
+.input-menu img {
+  width: 1.25rem;
+height: 1.25rem;
+}
+/* start the hero section */
+.hero_section {
+  min-height: calc(100vh - 15rem);
+  background-repeat: no-repeat;
+  background-size:contain;
+  width: 100%;
+  background-position: right bottom;
+  background-image: url('../images/heroimg.svg');
+  height: 100%;
+}
+.hero_titel {
+  color: var(--Font-Header, #093C5F);
+font-family:var(--Playfair-font);
+font-size: clamp( 2.75rem,4vw  ,4.90244rem);
+font-style: normal;
+font-weight: 600;
+line-height: 116.385%; /* 5.70569rem */
+}
+.hero-button {
+  border-radius: 2.125rem;
+border: 1.133px solid var(--CTA, #F86761);
+background: var(--CTA, linear-gradient(219deg, #F86761 22.58%, #FEA07D 78.46%));
+padding: 1.13331rem 2.72081rem 1.11669rem 2.7625rem;
+color: #FFF;
+font-size: 1.275rem;
+font-style: normal;
+font-weight: 600;
+line-height: 1.98331rem; /* 155.556% */
+}
+/* end the hero section */
+/* start status section  */
+.status-container {
+  margin-block: 5rem;
+}
+.status-container h1 {
+  color: var(--Font-Paragraph);
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2.125rem;;
+}
+.status-container h1 span {
+  color: var(--Color-3);
+font-size: 1.875rem;
+font-style: normal;
+font-weight: 700;
+line-height: 2.125rem; /* 113.333% */
+}
+
+
+/* start info status section */
+.state__box .img_container {
+  width: 5.59763rem;
+height: 5.59763rem;
+  background-color: #F5F0FF;
+  margin: auto;
+}
+.state__box .img_container img {
+  width: 2.56556rem;
+}
+.state__box  .status_number {
+  color: var(--Font-Header);
+
+  font-size: 3.26531rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.73175rem; /* 114.286% */
+  margin-bottom: .63rem;
+}
+.state__box  .status_titel {
+  color: var(--Font-Paragraph);
+
+  font-size: 1.28281rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.86588rem; /* 145.455% */
+}
+
+/* start Facilities section  */
+.Facilities {
+  margin-block: 6.09rem 7.44rem;
+  background: var(--bg-2, #FFF2F1);
+  padding: 3%  5%;
+  display: grid;
+  place-items: center;
+}
+.Facilities__box.active {
+  background: var(--shape-1, linear-gradient(91deg, #4B66BA 1.05%, #8C68C8 99.39%));
+  color: white;
+  margin-top: 5rem;
+}
+.Facilities__box.active .img_container {
+  width: 5.66325rem;
+height: 5.66325rem;
+display: grid;
+place-items: center;
+border-radius: 50%;
+background-color: white;
+}
+.Facilities__box.active h3 ,
+.Facilities__box.active p {
+  color: white;
+}
+.Facilities__box {
+  border-radius: 0.70794rem;
+background: #FFF;
+padding: 3rem 2.19rem;
+box-shadow: 10px 40px 50px 0px rgba(232, 232, 232, 0.48);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.Facilities__box img {
+  width: 2.83163rem;
+height: 2.83163rem;
+}
+.Facilities__box h3 {
+  color: var(--Font-Header, #093C5F);
+font-size: 1.13263rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-block: 3.07rem 1.84rem;
+}
+.Facilities__box p {
+  color: var(--Font-Paragraph);
+text-align: justify;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+/* end Facilities section  */
+
+/* start Features section  */
+.right-content .subtitel_section {
+  color: var(--Font-Header);
+font-size: 2.06488rem;
+font-style: normal;
+font-weight: 600;
+line-height: 160%; /* 3.30381rem */
+margin-bottom: 2.63rem;
+}
+.right-content .subtitel_section span {
+  color: var(--Color-2, #F86761);
+}
+.right-content  .img__container {
+  fill: #FBFBFB;
+filter: drop-shadow(0px 12.389px 36.342px rgba(13, 15, 28, 0.12));
+width: 3.09731rem;
+height: 3.09731rem;
+display: grid;
+place-items: center;
+}
+.right-content  .img__container img {
+  width: 1.37269rem;
+  height: 1.34219rem;
+
+}
+.right-content .Feature__dis {
+  color: var(--Font-Paragraph );
+font-size: 1.13569rem;
+font-style: normal;
+font-weight: 400;
+line-height: 180%; /* 2.04425rem */
+letter-spacing: 0.02269rem;
+max-width: 35ch;
+}
+
+/* end Features section  */
+
+/* start Courses section  */
+.Courses_section {
+  margin-block: 9rem;
+}
+.Courses_section .right-content {
+  padding-left: 10%;
+}
+.Courses_section .right-content .sction_titel span {
+  color: var(--Font-Paragraph);
+font-size: 1rem;
+font-style: normal;
+font-weight: 700;
+line-height: 2rem; /* 200% */
+text-transform: uppercase;
+}
+
+.Courses_section .right-content .Courses_subtitel {
+  color: var(--Font-Paragraph );
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem; /* 145.455% */
+  margin-block: 1.75rem 2.12rem;
+}
+.Courses_section .right-content .Courses_discrption {
+  color: var(--Font-Paragraph);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem; /* 177.778% */
+  margin-bottom: 2.44rem;
+  max-width: 48ch;
+}
+.Courses_section .right-content  h4 {
+  color: #333;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 700;
+line-height: 2rem; /* 133.333% */
+}
+.Courses_section .right-content .course__dis {
+  color: var(--Font-Paragraph);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem; /* 177.778% */
+  margin-top: .19rem;
+  max-width: 34ch;
+}
+/* end Courses section */
+

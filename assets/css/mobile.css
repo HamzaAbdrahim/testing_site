@@ -1,0 +1,11 @@
+@media (min-width:768px) {
+
+}
+@media (max-width:768px) {
+    .hero-button  {
+        padding: 1rem;
+    }
+    .right-content {
+        margin-left: 0 !important;
+    }
+}
